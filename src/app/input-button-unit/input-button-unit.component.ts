@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   <input #inputElementRef
          [value]="title"
          (keyup.enter)="changeTitle($event.target.value)">
-  <button (click)="changeTitle(inputElementRef.value)">Save</button>
+
+  <button (click)="changeTitle(inputElementRef.value)">
+    Save
+  </button>
 `,
   styleUrls: ['./input-button-unit.component.css']
 })
